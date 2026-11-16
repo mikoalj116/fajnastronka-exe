@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+<section id="lewa">
+
+    <h1>Tom Pearl Legacy </h1>
+     <img src="2.png" id="obrazek1" width="400">
+
+    <br><br>
+
+    <button onclick="lewa1()">Lewo</button>
+    <button onclick="prawa1()">Prawo</button>
+    <script> 
+        let i = 2;
+        let obrazek1 = document.getElementById("obrazek1");
+
+        function lewa1(){
+            if(i == 1 ){
+                i = 3 
+                obrazek1.src=`${i}.png`;
+            } else {
+                i = i - 1 ;
+                obrazek1.src=`${i}.png`;
+            };
+        };
+        function prawa1(){
+            if(i == 3){
+                i = 1 
+                obrazek1.src=`${i}.png`;
+            } else {
+                i = i + 1;
+                obrazek1.src=`${i}.png`;
+            };
+                };
+                </script>
+
+</section>
+<section id="prawa">
+
+    <h1>The Big 3</h1>
+     <img src="4.png" id="obrazek" width="400">
+
+    <br><br>
+
+    <button onclick="lewa()">Lewo</button>
+    <button onclick="prawa()">Prawo</button>
+
+    
+                <script>        
+                let j = 4;
+        let obrazek = document.getElementById("obrazek");
+
+        function lewa(){
+            if(j == 4 ){
+                j = 6 
+                obrazek.src=`${j}.png`;
+            } else {
+                j = j - 1 ;
+                obrazek.src=`${j}.png`;
+            };
+        };
+        function prawa(){
+            if(j == 6){
+                j = 4 
+                obrazek.src=`${j}.png`;
+            } else {
+                j = j + 1;
+                obrazek.src=`${j}.png`;
+            };
+                };
+    </script>
+    </section>
+    </div>
+</body>
+</html>
